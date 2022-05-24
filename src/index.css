@@ -17,7 +17,7 @@ nav {
   align-items: center;
   background-color: #21222a;
   height: 90px;
-  padding: 30px 25px;
+  padding: 2em;
 }
 
 .nav--logo_text,
@@ -44,21 +44,16 @@ nav {
 
 /* MAIN SECTION */
 main {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 57px 27px;
+  padding: 2em;
   color: white;
   background-image: url(./images/react-icon-large.png);
   background-repeat: no-repeat;
   background-position: right 75%;
-  max-width: 400px;
-  margin: 0 auto;
 }
 
 .main--title {
   margin: 0;
-  font-size: 39px;
+  font-size: 36px;
   letter-spacing: -0.05em;
 }
 
@@ -68,12 +63,11 @@ main ul {
 
 .main--facts {
   margin-top: 20px;
-  max-width: 400px;
 }
 
 .main--facts > li {
   line-height: 19px;
-  padding-block: 10px;
+  padding-block: 5px;
 }
 
 .main--facts > li::marker {
@@ -86,7 +80,7 @@ main ul {
   nav {
     flex-direction: column;
     align-items: flex-start;
-    padding-top: 20px;
+    padding: 1em;
   }
 
   .nav--logo_text {
@@ -94,7 +88,28 @@ main ul {
   }
 
   main {
-    flex-direction: column;
+    padding: 1em;
+  }
+
+  .main--title {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  main {
     max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .main--title {
+    font-size: 48px;
+    margin-top: 1em;
+  }
+
+  .main--facts > li {
+    font-size: 1.5rem;
+    line-height: 25px;
+    padding-block: 10px;
   }
 }
